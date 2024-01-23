@@ -1,0 +1,83 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #d3f5d3; /* Light green background color */
+            font-family: 'Arial', sans-serif; /* Default font */
+        }
+    </style>
+    <title>Server Services</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to <span class="main-heading">Server Services</span> – Your Premier Server Solution Provider</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+        <button id="menu-button">Toggle Menu</button>
+    </header>
+
+    <section>
+        <!-- Introduction -->
+        <div class="intro">
+            <p>Welcome to Server Services – Your Premier Server Solution Provider.</p>
+            <p>At Server Services, we specialize in delivering top-notch server solutions tailored to meet the dynamic needs of businesses. Our seasoned professionals are committed to providing hassle-free server deployment and configuration, 24/7 managed services, robust security solutions, and scalable infrastructure.</p>
+        </div>
+
+        <!-- What Sets Us Apart -->
+        <div class="sets-us-apart">
+            <h2>What Sets Us Apart:</h2>
+            <ul>
+                <li><strong>Expertise:</strong> Benefit from the knowledge and experience of our skilled professionals well-versed in the latest server technologies.</li>
+                <li><strong>Reliability:</strong> Count on us for robust and reliable server solutions that keep your business operations running smoothly.</li>
+                <li><strong>Security:</strong> We prioritize the security of your data, implementing industry-best practices to protect your information.</li>
+                <li><strong>Customer-Centric Approach:</strong> Your success is our success. We work closely with you to understand your unique requirements and tailor solutions that exceed your expectations.</li>
+            </ul>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="call-to-action">
+            <p>Discover the difference a dedicated server service partner can make for your business. Explore our services and let us empower your organization to thrive in the digital age. Welcome to Server Services – Where Excellence Meets Innovation.</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="ContactFormHandler.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Server Services</p>
+    </footer>
+
+    <!-- Include PHP and JavaScript files -->
+    <?php include 'ServerStatus.php'; ?>
+    <?php include 'GalleryImages.php'; ?>
+
+    <script src="ToggleMenu.js"></script>
+    <script src="ImageSlider.js"></script>
+    <script src="FormValidation.js"></script>
+</body>
+</html>
+
